@@ -15,8 +15,11 @@
                 items:1
             },
             1000:{
+                items:1
+            },
+            1280:{
                 items:2
-            }
+            },
         }
     });
 
@@ -36,7 +39,16 @@
                 items:1
             },
             1000:{
+                items:1
+            },
+            1280:{
                 items:4
             }
         }
     });
+    const menu = document.querySelector('.menu-btn');
+    const nav_menu = document.querySelector('.nav-menu');
+    menu.onclick = function(){
+        menu.classList.toggle('active');
+        nav_menu.classList.toggle('active');
+    }
